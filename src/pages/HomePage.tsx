@@ -106,7 +106,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
         >
           {/* SLIDE 1 */}
           <SwiperSlide>
-            <div style={{ width: '100%', height: '100%', background: `linear-gradient(to right, rgba(15, 30, 56, 0.95) 0%, rgba(27, 42, 74, 0.4) 100%), url('/images/slider_1.png') center/cover no-repeat`, display: 'flex', alignItems: 'center' }}>
+            <div style={{ width: '100%', height: '100%', background: `linear-gradient(to right, rgba(15, 30, 56, 0.95) 0%, rgba(27, 42, 74, 0.4) 100%), url('./images/slider_1.png') center/cover no-repeat`, display: 'flex', alignItems: 'center' }}>
               <div style={{ maxWidth: '1280px', width: '100%', margin: '0 auto', padding: '0 1.5rem', paddingTop: '2rem' }}>
                 <div className="hero-badge" style={{ marginBottom: '1.5rem', display: 'inline-flex' }}>
                   <span style={{ fontSize: '1rem' }}></span>
@@ -132,7 +132,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
 
           {/* SLIDE 2 */}
           <SwiperSlide>
-            <div style={{ width: '100%', height: '100%', background: `linear-gradient(to right, rgba(15, 30, 56, 0.95) 0%, rgba(27, 42, 74, 0.4) 100%), url('/images/slider_2.png') center/cover no-repeat`, display: 'flex', alignItems: 'center' }}>
+            <div style={{ width: '100%', height: '100%', background: `linear-gradient(to right, rgba(15, 30, 56, 0.95) 0%, rgba(27, 42, 74, 0.4) 100%), url('./images/slider_2.png') center/cover no-repeat`, display: 'flex', alignItems: 'center' }}>
               <div style={{ maxWidth: '1280px', width: '100%', margin: '0 auto', padding: '0 1.5rem', paddingTop: '2rem' }}>
                 <div className="hero-badge" style={{ marginBottom: '1.5rem', display: 'inline-flex' }}>
                   <span style={{ fontSize: '1rem' }}></span>
@@ -158,7 +158,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
 
           {/* SLIDE 3 */}
           <SwiperSlide>
-            <div style={{ width: '100%', height: '100%', background: `linear-gradient(to right, rgba(15, 30, 56, 0.95) 0%, rgba(27, 42, 74, 0.4) 100%), url('/images/slider_3.png') center/cover no-repeat`, display: 'flex', alignItems: 'center' }}>
+            <div style={{ width: '100%', height: '100%', background: `linear-gradient(to right, rgba(15, 30, 56, 0.95) 0%, rgba(27, 42, 74, 0.4) 100%), url('./images/slider_3.png') center/cover no-repeat`, display: 'flex', alignItems: 'center' }}>
               <div style={{ maxWidth: '1280px', width: '100%', margin: '0 auto', padding: '0 1.5rem', paddingTop: '2rem' }}>
                 <div className="hero-badge" style={{ marginBottom: '1.5rem', display: 'inline-flex' }}>
                   <span style={{ fontSize: '1rem' }}></span>
@@ -240,7 +240,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
             {/* Image */}
             <div className="about-img-wrapper" data-aos="fade-right">
               <img
-                src="/images/doctor-photo.jpg"
+                src="./images/doctor-photo.jpg"
                 alt="Dr. A. Ajay Kumar - Surgical Oncologist"
                 loading="lazy"
                 onError={(e) => {

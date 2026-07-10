@@ -15,7 +15,7 @@ export default function ClinicPage({ setCurrentPage }: ClinicPageProps) {
       {/* Hero */}
       <section style={{ 
         position: 'relative', overflow: 'hidden',
-        background: `linear-gradient(135deg, rgba(15,30,56,0.92) 0%, rgba(27,42,74,0.96) 100%), url('/images/page_banner.png') center/cover no-repeat`, 
+        background: `linear-gradient(135deg, rgba(15,30,56,0.92) 0%, rgba(27,42,74,0.96) 100%), url('./images/page_banner.png') center/cover no-repeat`, 
         padding: '8rem 0', color: 'white' 
       }}>
         {/* Animated background elements */}

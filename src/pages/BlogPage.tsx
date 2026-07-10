@@ -118,7 +118,7 @@ export default function BlogPage({ setCurrentPage }: BlogPageProps) {
   if (selectedPost) {
     return (
       <div className="page-transition">
-        <div className="page-hero" style={{ padding: '8rem 0 4rem', background: `linear-gradient(135deg, rgba(27,42,74,0.95), rgba(15,30,56,0.9)), url('/images/page_banner.png') center/cover no-repeat` }}>
+        <div className="page-hero" style={{ padding: '8rem 0 4rem', background: `linear-gradient(135deg, rgba(27,42,74,0.95), rgba(15,30,56,0.9)), url('./images/page_banner.png') center/cover no-repeat` }}>
           <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 1 }}>
             <div style={{ display: 'inline-flex', padding: '0.3rem 0.75rem', borderRadius: '50px', background: `${selectedPost.categoryColor}22`, color: selectedPost.categoryColor, fontSize: '0.8rem', fontFamily: 'Inter', fontWeight: 700, marginBottom: '1rem', border: `1px solid ${selectedPost.categoryColor}44` }}>
               {selectedPost.category}
@@ -175,7 +175,7 @@ export default function BlogPage({ setCurrentPage }: BlogPageProps) {
   return (
     <div className="page-transition">
       {/* Page Hero */}
-      <div className="page-hero" style={{ background: `linear-gradient(135deg, rgba(27,42,74,0.95), rgba(15,30,56,0.9)), url('/images/page_banner.png') center/cover no-repeat` }}>
+      <div className="page-hero" style={{ background: `linear-gradient(135deg, rgba(27,42,74,0.95), rgba(15,30,56,0.9)), url('./images/page_banner.png') center/cover no-repeat` }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 1, textAlign: 'center' }}>
           <span className="section-label" style={{ color: '#0ABAB5' }}>Knowledge Center</span>
           <h1 style={{ fontFamily: 'Inter', fontWeight: 800, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', marginBottom: '1rem' }}>

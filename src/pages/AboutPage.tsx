@@ -11,7 +11,7 @@ export default function AboutPage({ setCurrentPage }: AboutPageProps) {
       <div style={{
         position: 'relative',
         padding: '10rem 1.5rem 6rem',
-        background: `linear-gradient(135deg, rgba(15,30,56,0.9) 0%, rgba(27,42,74,0.95) 100%), url('/images/page_banner.png') center/cover no-repeat`,
+        background: `linear-gradient(135deg, rgba(15,30,56,0.9) 0%, rgba(27,42,74,0.95) 100%), url('./images/page_banner.png') center/cover no-repeat`,
         overflow: 'hidden',
         textAlign: 'center'
       }}>
@@ -41,7 +41,7 @@ export default function AboutPage({ setCurrentPage }: AboutPageProps) {
             <div style={{ flex: '1 1 450px', position: 'relative' }} data-aos="fade-right">
               <div style={{ position: 'relative', borderRadius: '24px', padding: '1rem', background: 'white', boxShadow: '0 30px 60px rgba(27,42,74,0.08)' }}>
                 <img
-                  src="/images/doctor-photo.jpg"
+                  src="./images/doctor-photo.jpg"
                   alt="Dr. A. Ajay Kumar"
                   style={{ width: '100%', height: '550px', objectFit: 'cover', borderRadius: '16px' }}
                   loading="lazy"

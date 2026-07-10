@@ -19,7 +19,7 @@ export default function ContactPage({ setCurrentPage }: ContactPageProps) {
   return (
     <div className="page-transition">
       {/* Page Hero */}
-      <div className="page-hero" style={{ background: `linear-gradient(135deg, rgba(27,42,74,0.95), rgba(15,30,56,0.9)), url('/images/page_banner.png') center/cover no-repeat` }}>
+      <div className="page-hero" style={{ background: `linear-gradient(135deg, rgba(27,42,74,0.95), rgba(15,30,56,0.9)), url('./images/page_banner.png') center/cover no-repeat` }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 1, textAlign: 'center' }}>
           <span className="section-label" style={{ color: '#0ABAB5' }}>Reach Us</span>
           <h1 style={{ fontFamily: 'Inter', fontWeight: 800, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', marginBottom: '1rem' }}>

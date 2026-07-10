@@ -14,7 +14,7 @@ export default function ExpertiseTemplate({ title, description, setCurrentPage }
       <div style={{
         position: 'relative',
         padding: '12rem 1.5rem 8rem',
-        background: `linear-gradient(135deg, rgba(15,30,56,0.9) 0%, rgba(27,42,74,0.95) 100%), url('/images/page_banner.png') center/cover no-repeat`,
+        background: `linear-gradient(135deg, rgba(15,30,56,0.9) 0%, rgba(27,42,74,0.95) 100%), url('./images/page_banner.png') center/cover no-repeat`,
         overflow: 'hidden',
         textAlign: 'center'
       }}>
