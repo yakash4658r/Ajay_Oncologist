@@ -63,12 +63,11 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
               <div style={{
-                width: '44px', height: '44px', borderRadius: '12px',
-                background: 'linear-gradient(135deg, #0ABAB5, #089a96)',
+                width: '44px', height: '44px', borderRadius: '8px',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 4px 15px rgba(10,186,181,0.4)'
+                overflow: 'hidden'
               }}>
-                <span style={{ color: 'white', fontFamily: 'Inter', fontWeight: 800, fontSize: '1.1rem' }}>AK</span>
+                <img src="./Logo_transparent.png" alt="Dr. A. Ajay Kumar Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div>
                 <div style={{ fontFamily: 'Inter', fontWeight: 700, color: 'white', fontSize: '1rem', lineHeight: 1.2 }}>Dr. A. Ajay Kumar</div>
