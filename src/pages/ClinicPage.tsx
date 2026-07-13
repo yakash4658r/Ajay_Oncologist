@@ -165,6 +165,7 @@ export default function ClinicPage({ setCurrentPage }: ClinicPageProps) {
             </button>
           </div>
         </div>
+      </section>
       {/* Clinic Images Showcase */}
       <section style={{ padding: '8rem 0', background: '#ffffff' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
