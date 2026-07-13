@@ -61,17 +61,13 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
             onClick={() => navigate('home')}
             style={{ background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
               <div style={{
-                width: '44px', height: '44px', borderRadius: '8px',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                height: '60px',
+                display: 'flex', alignItems: 'center', justifyContent: 'flex-start',
                 overflow: 'hidden'
               }}>
-                <img src="./Logo_transparent.png" alt="Dr. A. Ajay Kumar Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-              </div>
-              <div>
-                <div style={{ fontFamily: 'Inter', fontWeight: 700, color: 'white', fontSize: '1rem', lineHeight: 1.2 }}>Dr. A. Ajay Kumar</div>
-                <div style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.7)', fontFamily: 'Inter', letterSpacing: '0.5px' }}>Surgical Oncologist</div>
+                <img src="./Logo_transparent.png" alt="Dr. A. Ajay Kumar Logo" style={{ height: '100%', width: 'auto', objectFit: 'contain' }} />
               </div>
             </div>
           </button>
@@ -139,7 +135,9 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${mobileOpen ? 'open' : ''}`}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '2rem' }}>
-          <div style={{ fontFamily: 'Inter', fontWeight: 700, color: 'white', fontSize: '1.1rem' }}>Dr. A. Ajay Kumar</div>
+          <div style={{ height: '45px', display: 'flex', alignItems: 'center' }}>
+            <img src="./Logo_transparent.png" alt="Logo" style={{ height: '100%', width: 'auto', objectFit: 'contain' }} />
+          </div>
           <button onClick={() => setMobileOpen(false)} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.7)', cursor: 'pointer' }}>
             <X size={24} />
           </button>
