@@ -63,11 +63,11 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
           >
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <div style={{
-                height: '100px',
-                display: 'flex', alignItems: 'center', justifyContent: 'flex-start',
-                overflow: 'hidden'
+                height: '50px',
+                width: '180px',
+                display: 'flex', alignItems: 'center', justifyContent: 'flex-start'
               }}>
-                <img src="./Logo_transparent.png" alt="Dr. A. Ajay Kumar Logo" style={{ height: '100%', width: 'auto', objectFit: 'contain' }} />
+                <img src="./Logo_transparent.png" alt="Dr. A. Ajay Kumar Logo" style={{ height: '100%', width: '100%', objectFit: 'contain', transform: 'scale(1.8)', transformOrigin: 'left center' }} />
               </div>
             </div>
           </button>
@@ -135,8 +135,8 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${mobileOpen ? 'open' : ''}`}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '2rem' }}>
-          <div style={{ height: '65px', display: 'flex', alignItems: 'center' }}>
-            <img src="./Logo_transparent.png" alt="Logo" style={{ height: '100%', width: 'auto', objectFit: 'contain' }} />
+          <div style={{ height: '40px', width: '150px', display: 'flex', alignItems: 'center' }}>
+            <img src="./Logo_transparent.png" alt="Logo" style={{ height: '100%', width: '100%', objectFit: 'contain', transform: 'scale(1.8)', transformOrigin: 'left center' }} />
           </div>
           <button onClick={() => setMobileOpen(false)} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.7)', cursor: 'pointer' }}>
             <X size={24} />
