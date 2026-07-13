@@ -165,6 +165,44 @@ export default function ClinicPage({ setCurrentPage }: ClinicPageProps) {
             </button>
           </div>
         </div>
+      {/* Clinic Images Showcase */}
+      <section style={{ padding: '8rem 0', background: '#ffffff' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '4rem' }} data-aos="fade-up">
+            <span className="section-label" style={{ color: '#0ABAB5' }}>Our Facilities</span>
+            <h2 className="section-title" style={{ color: '#1B2A4A' }}>State-of-the-Art <span style={{ color: '#0ABAB5' }}>Clinic</span></h2>
+            <div className="section-divider center" style={{ background: '#0ABAB5' }}></div>
+          </div>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            <div data-aos="fade-up" data-aos-delay="0" style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.08)', background: 'white' }}>
+              <div style={{ overflow: 'hidden' }}>
+                <img src="./Entrance.jpeg" alt="Clinic Entrance" style={{ width: '100%', height: '350px', objectFit: 'cover', transition: 'transform 0.5s ease' }} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'} />
+              </div>
+              <div style={{ padding: '1.5rem', textAlign: 'center' }}>
+                <h3 style={{ fontFamily: 'Inter', fontWeight: 800, fontSize: '1.25rem', color: '#1B2A4A' }}>Clinic Entrance</h3>
+              </div>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="100" style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.08)', background: 'white' }}>
+              <div style={{ overflow: 'hidden' }}>
+                <img src="./reception.jpeg" alt="Reception Hall" style={{ width: '100%', height: '350px', objectFit: 'cover', transition: 'transform 0.5s ease' }} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'} />
+              </div>
+              <div style={{ padding: '1.5rem', textAlign: 'center' }}>
+                <h3 style={{ fontFamily: 'Inter', fontWeight: 800, fontSize: '1.25rem', color: '#1B2A4A' }}>Reception Hall</h3>
+              </div>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="200" style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.08)', background: 'white' }}>
+              <div style={{ overflow: 'hidden' }}>
+                <img src="./doc_room.jpeg" alt="Consultation Room" style={{ width: '100%', height: '350px', objectFit: 'cover', transition: 'transform 0.5s ease' }} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'} />
+              </div>
+              <div style={{ padding: '1.5rem', textAlign: 'center' }}>
+                <h3 style={{ fontFamily: 'Inter', fontWeight: 800, fontSize: '1.25rem', color: '#1B2A4A' }}>Consultation Room</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
