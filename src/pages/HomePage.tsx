@@ -30,7 +30,7 @@ import { RibbonIcon, ThyroidIcon, StomachIcon, ColonIcon, UterusIcon, BoneIcon, 
 
 const specializations = [
   { id: 'expertise_breast_cancer', icon: <RibbonIcon size={36} color="#e91e8c" />, title: 'Breast Cancer', desc: 'Breast conservation surgery, oncoplasty, and mastectomy — treating the disease while preserving form and confidence.', color: '#e91e8c' },
-  { id: 'expertise_thyroid_cancer', icon: <ThyroidIcon size={36} color="#0ABAB5" />, title: 'Thyroid Cancer & Disorders', desc: 'Surgical management of both cancerous and benign thyroid conditions.', color: '#0ABAB5' },
+  { id: 'expertise_thyroid_cancer', icon: <ThyroidIcon size={36} color="#0ABAB5" />, title: 'Thyroid Cancer & Thyroid Disorders', desc: 'Surgical management of both cancerous and benign thyroid conditions.', color: '#0ABAB5' },
   { id: 'expertise_gi_cancer', icon: <StomachIcon size={36} color="#f59e0b" />, title: 'Stomach (Gastric) Cancer', desc: 'Comprehensive surgical treatment for stomach cancer, from diagnosis to definitive surgery.', color: '#f59e0b' },
   { id: 'expertise_colorectal_cancer', icon: <ColonIcon size={36} color="#8b5cf6" />, title: 'Colo-Rectal Cancer', desc: 'Laparoscopic and open surgical management of colon and rectal cancers.', color: '#8b5cf6' },
   { id: 'expertise_gynecological_cancer', icon: <UterusIcon size={36} color="#ef4444" />, title: 'Uterine, Endometrial & Ovarian Cancer', desc: 'Surgical oncology care for gynecological cancers.', color: '#ef4444' },
@@ -188,9 +188,9 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
           <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
             <div className="hero-stats" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
               {[
-                { num: `${years}+`, label: 'Years Experience' },
-                { num: `${patients}+`, label: 'Patients' },
-                { num: `${surgeries}+`, label: 'Operations' },
+                { num: `15+`, label: 'Years of Excellence' },
+                { num: `1000+`, label: 'Patients' },
+                { num: `200+`, label: 'Operations' },
                 { num: `1`, label: 'Center' },
               ].map((stat, i) => (
                 <div key={i} className="hero-stat" ref={i === 0 ? counterRef : undefined} style={{ background: 'rgba(15, 30, 56, 0.6)', backdropFilter: 'blur(10px)', padding: '1rem 2rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)' }}>
@@ -301,8 +301,8 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
       <section className="specializations-section" style={{ padding: '6rem 0' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
           <div style={{ textAlign: 'center', marginBottom: '3.5rem' }} data-aos="fade-up">
-            <span className="section-label">Expert Care</span>
-            <h2 className="section-title">Our <span>Specializations</span></h2>
+            <span className="section-label">Area of Expertise</span>
+            <h2 className="section-title">Conditions <span>Treated</span></h2>
             <div className="section-divider center"></div>
             <p style={{ color: '#475569', maxWidth: '600px', margin: '0 auto', lineHeight: '1.8' }}>
               Dr. Ajay Kumar offers comprehensive surgical oncology services, covering a wide spectrum of cancers with advanced techniques and personalized treatment plans.
@@ -409,69 +409,6 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
         </div>
       </section>
 
-      {/* ===== TESTIMONIALS ===== */}
-      <section className="testimonials-section" style={{ padding: '6rem 0' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
-          <div style={{ textAlign: 'center', marginBottom: '3.5rem' }} data-aos="fade-up">
-            <span className="section-label">Patient Stories</span>
-            <h2 className="section-title">What Our <span>Patients Say</span></h2>
-            <div className="section-divider center"></div>
-          </div>
-
-          {/* Featured Testimonial */}
-          <div data-aos="fade-up" style={{ marginBottom: '2rem' }}>
-            <div className="testimonial-card" style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center', padding: '3rem' }}>
-              <div className="testimonial-quote">"</div>
-              <p style={{ color: '#475569', lineHeight: '1.9', fontSize: '1.05rem', marginBottom: '1.5rem', fontStyle: 'italic' }}>
-                {testimonials[activeTestimonial].text}
-              </p>
-              <div className="stars" style={{ marginBottom: '0.75rem' }}>
-                {[...Array(testimonials[activeTestimonial].stars)].map((_, i) => <span key={i}>★</span>)}
-              </div>
-              <div style={{ fontFamily: 'Inter', fontWeight: 700, color: '#1B2A4A' }}>{testimonials[activeTestimonial].name}</div>
-              <div style={{ fontSize: '0.8rem', color: '#0ABAB5', fontWeight: 600 }}>{testimonials[activeTestimonial].location}</div>
-            </div>
-          </div>
-
-          {/* Dots */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', marginBottom: '3rem' }}>
-            {testimonials.map((_, i) => (
-              <button key={i} onClick={() => setActiveTestimonial(i)}
-                style={{
-                  width: i === activeTestimonial ? '24px' : '8px', height: '8px',
-                  borderRadius: '50px', border: 'none', cursor: 'pointer',
-                  background: i === activeTestimonial ? '#0ABAB5' : '#cbd5e1',
-                  transition: 'all 0.3s ease', padding: 0
-                }}
-              />
-            ))}
-          </div>
-
-          {/* All testimonials grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-            {testimonials.map((t, i) => (
-              <div key={i} className="testimonial-card" data-aos="fade-up" data-aos-delay={`${i * 80}`}>
-                <div className="stars" style={{ marginBottom: '0.75rem' }}>
-                  {[...Array(t.stars)].map((_, j) => <span key={j}>★</span>)}
-                </div>
-                <p style={{ color: '#475569', lineHeight: '1.8', fontSize: '0.9rem', marginBottom: '1rem', fontStyle: 'italic' }}>
-                  "{t.text}"
-                </p>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'linear-gradient(135deg, #0ABAB5, #1B2A4A)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontFamily: 'Inter', fontWeight: 700, fontSize: '1rem' }}>
-                    {t.name[0]}
-                  </div>
-                  <div>
-                    <div style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: '0.9rem', color: '#1B2A4A' }}>{t.name}</div>
-                    <div style={{ fontSize: '0.75rem', color: '#0ABAB5', fontWeight: 600 }}> {t.location}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ===== APPOINTMENT SECTION ===== */}
       <section className="appointment-section" style={{ padding: '6rem 0' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', position: 'relative', zIndex: 1 }}>
@@ -558,7 +495,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
                 </h3>
                 {[
                   { icon: <Phone size={18} />, label: 'Phone / Call', value: '+91 98765 43210', href: 'tel:+919876543210' },
-                  { icon: <span style={{ fontSize: '1rem' }}></span>, label: 'WhatsApp', value: '+91 98765 43210', href: 'https://wa.me/919876543210' },
+                  { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>, label: 'WhatsApp', value: '+91 98765 43210', href: 'https://wa.me/919876543210' },
                   { icon: <Mail size={18} />, label: 'Email', value: 'drajayoncology@gmail.com', href: 'mailto:drajayoncology@gmail.com' },
                   { icon: <MapPin size={18} />, label: 'Clinic Address', value: 'Dr. A. Ajay Kumar Surgical Oncology Clinic, Chennai, Tamil Nadu - 600001' },
                 ].map((item, i) => (
@@ -582,8 +519,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
                   <Activity size={18} style={{ color: '#0ABAB5' }} /> Working Hours
                 </h4>
                 {[
-                  { day: 'Monday – Friday', time: '9:00 AM – 6:00 PM', open: true },
-                  { day: 'Saturday', time: '9:00 AM – 4:00 PM', open: true },
+                  { day: 'Monday – Saturday', time: '9:00 AM – 6:00 PM', open: true },
                   { day: 'Sunday', time: 'By Appointment Only', open: false },
                 ].map((h, i) => (
                   <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.6rem 0', borderBottom: i < 2 ? '1px solid rgba(255,255,255,0.05)' : 'none' }}>
