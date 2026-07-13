@@ -63,7 +63,7 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
           >
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <div style={{
-                height: '60px',
+                height: '100px',
                 display: 'flex', alignItems: 'center', justifyContent: 'flex-start',
                 overflow: 'hidden'
               }}>
@@ -135,7 +135,7 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${mobileOpen ? 'open' : ''}`}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '2rem' }}>
-          <div style={{ height: '45px', display: 'flex', alignItems: 'center' }}>
+          <div style={{ height: '65px', display: 'flex', alignItems: 'center' }}>
             <img src="./Logo_transparent.png" alt="Logo" style={{ height: '100%', width: 'auto', objectFit: 'contain' }} />
           </div>
           <button onClick={() => setMobileOpen(false)} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.7)', cursor: 'pointer' }}>
