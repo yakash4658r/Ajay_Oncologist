@@ -240,7 +240,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
             {/* Image */}
             <div className="about-img-wrapper" data-aos="fade-right">
               <img
-                src="./images/doctor-photo.jpg"
+                src="./Doctor.jpeg"
                 alt="Dr. A. Ajay Kumar - Surgical Oncologist"
                 loading="lazy"
                 onError={(e) => {

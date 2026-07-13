@@ -41,7 +41,7 @@ export default function AboutPage({ setCurrentPage }: AboutPageProps) {
             <div style={{ flex: '1 1 450px', position: 'relative' }} data-aos="fade-right">
               <div style={{ position: 'relative', borderRadius: '24px', padding: '1rem', background: 'white', boxShadow: '0 30px 60px rgba(27,42,74,0.08)' }}>
                 <img
-                  src="./images/doctor-photo.jpg"
+                  src="./Doctor.jpeg"
                   alt="Dr. A. Ajay Kumar"
                   style={{ width: '100%', height: '550px', objectFit: 'cover', borderRadius: '16px' }}
                   loading="lazy"

@@ -8,11 +8,11 @@ interface GalleryPageProps {
 const galleryImages = [
   { id: 1, src: 'https://images.pexels.com/photos/18112241/pexels-photo-18112241.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600', alt: 'Modern Operating Room', category: 'Operation Theatre', caption: 'State-of-the-art Operating Theatre' },
   { id: 2, src: 'https://images.pexels.com/photos/6129870/pexels-photo-6129870.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600', alt: 'Hospital Care', category: 'Patient Care', caption: 'Compassionate Patient Care' },
-  { id: 3, src: 'https://images.pexels.com/photos/33216715/pexels-photo-33216715.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600', alt: 'Medical Imaging', category: 'Facilities', caption: 'Advanced Diagnostic Imaging' },
+  { id: 3, src: './reception.jpeg', alt: 'Clinic Reception', category: 'Clinic', caption: 'Clinic Reception' },
   { id: 4, src: 'https://images.pexels.com/photos/4226219/pexels-photo-4226219.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600', alt: 'Medical Team', category: 'Team', caption: 'Expert Medical Team' },
-  { id: 5, src: 'https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600', alt: 'Consultation Room', category: 'Clinic', caption: 'Modern Consultation Room' },
+  { id: 5, src: './doc_room.jpeg', alt: 'Consultation Room', category: 'Clinic', caption: 'Dr. Ajay Kumar Consultation Room' },
   { id: 6, src: 'https://images.pexels.com/photos/8460157/pexels-photo-8460157.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600', alt: 'Medical Equipment', category: 'Equipment', caption: 'Advanced Surgical Equipment' },
-  { id: 7, src: 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600', alt: 'Hospital Ward', category: 'Facilities', caption: 'Modern Patient Wards' },
+  { id: 7, src: './Entrance.jpeg', alt: 'Hospital Entrance', category: 'Clinic', caption: 'AR Surgical & Cancer Clinic Entrance' },
   { id: 8, src: 'https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600', alt: 'Surgery', category: 'Operation Theatre', caption: 'Precision Surgical Care' },
   { id: 9, src: 'https://images.pexels.com/photos/4386476/pexels-photo-4386476.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600', alt: 'Doctor with patient', category: 'Patient Care', caption: 'Personalized Patient Consultation' },
 ];
