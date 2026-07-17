@@ -25,12 +25,6 @@ const YoutubeIcon = () => (
   </svg>
 );
 
-const LinkedinIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
-    <circle cx="4" cy="4" r="2"/>
-  </svg>
-);
 
 export default function Footer({ setCurrentPage }: FooterProps) {
   const navigate = (page: string) => {
@@ -68,15 +62,10 @@ export default function Footer({ setCurrentPage }: FooterProps) {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
               <div style={{
-                width: '44px', height: '44px', borderRadius: '12px',
-                background: 'linear-gradient(135deg, #0ABAB5, #089a96)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                height: '50px', width: '180px',
+                display: 'flex', alignItems: 'center', justifyContent: 'flex-start'
               }}>
-                <span style={{ color: 'white', fontFamily: 'Inter', fontWeight: 800, fontSize: '1.1rem' }}>AK</span>
-              </div>
-              <div>
-                <div style={{ fontFamily: 'Inter', fontWeight: 700, color: 'white', fontSize: '1rem' }}>Dr. A. Ajay Kumar</div>
-                <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.6)', fontFamily: 'Inter' }}>Surgical Oncologist</div>
+                <img src="./Logo_transparent.png" alt="Dr. A. Ajay Kumar Logo" style={{ height: '100%', width: '100%', objectFit: 'contain', transform: 'scale(1.8)', transformOrigin: 'left center' }} />
               </div>
             </div>
             <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.65)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
@@ -88,7 +77,6 @@ export default function Footer({ setCurrentPage }: FooterProps) {
                 { icon: <FacebookIcon />, href: '#', label: 'Facebook' },
                 { icon: <InstagramIcon />, href: '#', label: 'Instagram' },
                 { icon: <YoutubeIcon />, href: '#', label: 'YouTube' },
-                { icon: <LinkedinIcon />, href: '#', label: 'LinkedIn' },
               ].map(s => (
                 <a key={s.label} href={s.href} className="social-icon" aria-label={s.label} target="_blank" rel="noopener noreferrer">
                   {s.icon}

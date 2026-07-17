@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Phone, Calendar, ChevronRight, CheckCircle, ArrowRight, MapPin, Mail, Activity } from 'lucide-react';
+import { Phone, Calendar, ChevronRight, CheckCircle, ArrowRight, MapPin, Mail, Activity, GraduationCap, Award, FileText, HeartHandshake } from 'lucide-react';
 
 interface HomePageProps {
   setCurrentPage: (page: string) => void;
@@ -183,24 +183,6 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
           </SwiperSlide>
         </Swiper>
 
-        {/* Stats overlay */}
-        <div style={{ position: 'absolute', bottom: '4rem', left: 0, right: 0, zIndex: 10 }}>
-          <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
-            <div className="hero-stats" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
-              {[
-                { num: `15+`, label: 'Years of Excellence' },
-                { num: `1000+`, label: 'Patients' },
-                { num: `200+`, label: 'Operations' },
-                { num: `1`, label: 'Center' },
-              ].map((stat, i) => (
-                <div key={i} className="hero-stat" ref={i === 0 ? counterRef : undefined} style={{ background: 'rgba(15, 30, 56, 0.6)', backdropFilter: 'blur(10px)', padding: '1rem 2rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                  <span className="hero-stat-number" style={{ display: 'block', fontSize: '2rem', color: '#0ABAB5', fontWeight: 800 }}>{stat.num}</span>
-                  <span className="hero-stat-label" style={{ display: 'block', color: 'white', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>{stat.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
 
         {/* Wave */}
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
@@ -210,22 +192,55 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
         </div>
       </section>
 
-      {/* Trust Badges */}
-      <section className="trust-section" style={{ padding: '1.5rem 0' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '1.5rem' }}>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', alignItems: 'center' }}>
+      {/* ===== STATS SECTION ===== */}
+      <section style={{ padding: '5rem 0', background: 'linear-gradient(135deg, #0f1e38 0%, #1B2A4A 100%)', position: 'relative' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
+          <div className="hero-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem' }}>
             {[
-              { icon: '', text: 'MCh Surgical Oncology', sub: 'Post-doctoral Degree' },
-              { icon: '', text: 'Chennai\'s Top Cancer Surgeon', sub: 'Highly Trusted' },
-              { icon: '', text: 'Advanced Laparoscopic', sub: 'Minimally Invasive' },
-              { icon: '', text: '10+ Research Papers', sub: 'Published Nationally' },
-              { icon: '', text: '5000+ Happy Patients', sub: 'Trusted Care' },
+              { num: `15+`, label: 'Years of Excellence' },
+              { num: `1000+`, label: 'Patients' },
+              { num: `200+`, label: 'Operations' },
+              { num: `1`, label: 'Center' },
+            ].map((stat, i) => (
+              <div key={i} className="hero-stat" ref={i === 0 ? counterRef : undefined} style={{ background: '#111b33', padding: '2.5rem 1.5rem', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)', textAlign: 'center', boxShadow: '0 15px 30px rgba(0,0,0,0.2)' }}>
+                <span className="hero-stat-number" style={{ display: 'block', fontSize: '3.5rem', color: '#0ABAB5', fontWeight: 800, marginBottom: '0.5rem', lineHeight: '1' }}>{stat.num}</span>
+                <span className="hero-stat-label" style={{ display: 'block', color: 'white', fontSize: '1rem', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 700 }}>{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Badges - Premium Style */}
+      <section className="trust-section" style={{ padding: '4rem 0', background: '#f8fafc' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
+            {[
+              { icon: <GraduationCap size={28} color="#0ABAB5" />, text: 'MCh Surgical Oncology', sub: 'Post-doctoral Degree' },
+              { icon: <Award size={28} color="#e91e8c" />, text: "Chennai's Top Cancer Surgeon", sub: 'Highly Trusted' },
+              { icon: <Activity size={28} color="#f59e0b" />, text: 'Advanced Laparoscopic', sub: 'Minimally Invasive' },
+              { icon: <FileText size={28} color="#8b5cf6" />, text: '10+ Research Papers', sub: 'Published Nationally' },
+              { icon: <HeartHandshake size={28} color="#ef4444" />, text: '5000+ Happy Patients', sub: 'Trusted Care' },
             ].map((b, i) => (
-              <div key={i} className="trust-badge">
-                <span style={{ fontSize: '1.8rem' }}>{b.icon}</span>
+              <div key={i} className="trust-badge" style={{ 
+                background: 'white', padding: '1.5rem', borderRadius: '16px', 
+                boxShadow: '0 4px 20px rgba(0,0,0,0.04)', display: 'flex', flexDirection: 'column', 
+                alignItems: 'center', textAlign: 'center', border: '1px solid rgba(0,0,0,0.03)',
+                transition: 'transform 0.3s ease, boxShadow 0.3s ease'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.08)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.04)'; }}
+              >
+                <div style={{ 
+                  background: 'rgba(10, 186, 181, 0.08)', width: '60px', height: '60px', 
+                  borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', 
+                  marginBottom: '1rem' 
+                }}>
+                  {b.icon}
+                </div>
                 <div>
-                  <div style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: '0.85rem', color: '#1B2A4A' }}>{b.text}</div>
-                  <div style={{ fontSize: '0.75rem', color: '#64748b' }}>{b.sub}</div>
+                  <div style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: '0.95rem', color: '#1B2A4A', marginBottom: '0.3rem', lineHeight: '1.3' }}>{b.text}</div>
+                  <div style={{ fontSize: '0.8rem', color: '#64748b' }}>{b.sub}</div>
                 </div>
               </div>
             ))}
