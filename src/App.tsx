@@ -105,10 +105,10 @@ export default function App() {
   return (
     <>
       {/* Main App */}
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
         
-        <main>
+        <main style={{ flex: 1 }}>
           {renderPage()}
         </main>
 
