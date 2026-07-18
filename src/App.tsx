@@ -9,7 +9,6 @@ import GalleryPage from './pages/GalleryPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
-import ClinicPage from './pages/ClinicPage';
 import { 
   BreastCancerSurgeryPage, ThyroidCancerSurgeryPage, GICancerSurgeryPage, 
   GynecologicalCancerSurgeryPage, SoftTissueSarcomaPage, HeadNeckCancerPage, 
@@ -90,7 +89,6 @@ export default function App() {
       case 'expertise_head_neck_cancer': return <HeadNeckCancerPage {...props} />;
       case 'expertise_laparoscopic_surgery': return <LaparoscopicSurgeryPage {...props} />;
       case 'expertise_general_surgery': return <GeneralSurgeryPage {...props} />;
-      case 'clinic': return <ClinicPage {...props} />;
       case 'blog': return <BlogPage {...props} />;
       case 'contact': return <ContactPage {...props} />;
       // Keep others just in case they are navigated to directly

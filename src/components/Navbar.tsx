@@ -23,7 +23,6 @@ const pages = [
       { id: 'expertise_general_surgery', label: 'General Surgery' }
     ]
   },
-  { id: 'clinic', label: 'The Clinic' },
   { id: 'blog', label: 'Blogs' },
   { id: 'contact', label: 'Contact' },
 ];
