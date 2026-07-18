@@ -132,7 +132,7 @@ export default function Footer({ setCurrentPage }: FooterProps) {
               {[
                 {
                   icon: <MapPin size={16} />,
-                  text: 'Dr. A. Ajay Kumar Surgical Oncology Clinic, Chennai, Tamil Nadu - 600001, India'
+                  text: 'Dr. A. Ajay Kumar Surgical Oncology Clinic, No- 69, Sri Annai complex, Madras Thiruvallur High Rd, Venugopal Nagar, Thirumullaivoyal, Chennai, Avadi, Tamil Nadu 600062'
                 },
                 {
                   icon: <Phone size={16} />,

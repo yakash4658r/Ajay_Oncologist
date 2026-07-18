@@ -44,7 +44,7 @@ export default function ContactPage({ setCurrentPage }: ContactPageProps) {
               { icon: <Phone size={24} />, label: 'Call Us', value: '+91 98765 43210', sub: 'Mon–Sat, 9AM–6PM', href: 'tel:+919876543210', color: '#0ABAB5' },
               { icon: <span style={{ fontSize: '1.5rem' }}></span>, label: 'WhatsApp', value: '+91 98765 43210', sub: 'Quick Response', href: 'https://wa.me/919876543210', color: '#25D366' },
               { icon: <Mail size={24} />, label: 'Email Us', value: 'drajayoncology@gmail.com', sub: 'Within 24 hours', href: 'mailto:drajayoncology@gmail.com', color: '#f59e0b' },
-              { icon: <MapPin size={24} />, label: 'Visit Us', value: 'Chennai, Tamil Nadu', sub: 'Click for directions', href: 'https://maps.google.com/?q=Chennai', color: '#ef4444' },
+              { icon: <MapPin size={24} />, label: 'Visit Us', value: 'Thirumullaivoyal, Chennai', sub: 'Click for directions', href: 'https://maps.google.com/?q=No-+69,+Sri+Annai+complex,+Madras+Thiruvallur+High+Rd,+Venugopal+Nagar,+Thirumullaivoyal,+Chennai,+Avadi,+Tamil+Nadu+600062', color: '#ef4444' },
             ].map((c, i) => (
               <a key={i} href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined}
                 rel="noopener noreferrer"
@@ -210,12 +210,12 @@ export default function ContactPage({ setCurrentPage }: ContactPageProps) {
                 <div style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: '1.1rem', marginBottom: '1rem' }}> Clinic Address</div>
                 <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', lineHeight: '1.8', marginBottom: '1rem' }}>
                   Dr. A. Ajay Kumar Surgical Oncology Clinic<br />
-                  [Clinic Name & Full Address]<br />
-                  Chennai, Tamil Nadu – 600001<br />
-                  India
+                  No- 69, Sri Annai complex, Madras Thiruvallur High Rd<br />
+                  Venugopal Nagar, Thirumullaivoyal<br />
+                  Chennai, Avadi, Tamil Nadu 600062
                 </p>
                 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                  <a href="https://maps.google.com/?q=Chennai" target="_blank" rel="noopener noreferrer"
+                  <a href="https://maps.google.com/?q=No-+69,+Sri+Annai+complex,+Madras+Thiruvallur+High+Rd,+Venugopal+Nagar,+Thirumullaivoyal,+Chennai,+Avadi,+Tamil+Nadu+600062" target="_blank" rel="noopener noreferrer"
                     style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#0ABAB5', fontFamily: 'Inter', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
                      Get Directions
                   </a>
