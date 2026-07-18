@@ -15,7 +15,7 @@ export default function ExpertiseTemplate({ title, description, image, setCurren
       <div style={{
         position: 'relative',
         padding: '12rem 1.5rem 8rem',
-        background: `linear-gradient(135deg, rgba(15,30,56,0.8) 0%, rgba(27,42,74,0.95) 100%), url('${image || './images/page_banner.png'}') center/cover no-repeat`,
+        background: `linear-gradient(135deg, rgba(15,30,56,0.4) 0%, rgba(27,42,74,0.6) 100%), url('${image || './images/page_banner.png'}') center/cover no-repeat`,
         overflow: 'hidden',
         textAlign: 'center'
       }}>
@@ -24,10 +24,10 @@ export default function ExpertiseTemplate({ title, description, image, setCurren
         <div style={{ position: 'absolute', bottom: '-20%', right: '-10%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 70%)', filter: 'blur(60px)', animation: 'float 12s ease-in-out infinite reverse' }}></div>
         
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '1000px', margin: '0 auto' }} data-aos="fade-up">
-          <h1 style={{ fontFamily: 'Inter', fontWeight: 900, fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: 'white', lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-1px' }}>
+          <h1 style={{ fontFamily: 'Inter', fontWeight: 900, fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: 'white', lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-1px', textShadow: '0 4px 20px rgba(0,0,0,0.6)' }}>
             {title}
           </h1>
-          <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.15rem', lineHeight: '1.8', maxWidth: '600px', margin: '0 auto' }}>
+          <p style={{ color: 'rgba(255,255,255,0.95)', fontSize: '1.25rem', lineHeight: '1.8', maxWidth: '600px', margin: '0 auto', textShadow: '0 2px 10px rgba(0,0,0,0.5)', fontWeight: 500 }}>
             Advanced surgical care and specialized treatments for {title.toLowerCase()}.
           </p>
         </div>
