@@ -8,7 +8,14 @@ interface NavbarProps {
 
 const pages = [
   { id: 'home', label: 'Home' },
-  { id: 'about', label: 'About Us' },
+  { 
+    id: 'about', 
+    label: 'About Us',
+    dropdown: [
+      { id: 'about', label: 'Dr. A. Ajay Kumar' },
+      { id: 'clinic', label: 'The Clinic' }
+    ]
+  },
   { 
     id: 'expertise', 
     label: 'Expertise',
