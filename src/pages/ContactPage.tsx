@@ -229,28 +229,6 @@ export default function ContactPage({ setCurrentPage }: ContactPageProps) {
           </div>
         </div>
       </section>
-
-      {/* Emergency Section */}
-      <section style={{ background: 'linear-gradient(135deg, #ef4444, #b91c1c)', padding: '3rem 0' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center' }}>
-          <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}></div>
-          <h3 style={{ fontFamily: 'Inter', fontWeight: 800, color: 'white', fontSize: '1.5rem', marginBottom: '0.75rem' }}>
-            Medical Emergency?
-          </h3>
-          <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '1.5rem', fontSize: '1rem' }}>
-            For urgent cancer surgery consultations or emergency surgical care, contact us immediately.
-          </p>
-          <a href="tel:+919876543210" style={{
-            display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
-            background: 'white', color: '#ef4444',
-            padding: '1rem 2.5rem', borderRadius: '50px',
-            fontFamily: 'Inter', fontWeight: 800, fontSize: '1.1rem',
-            textDecoration: 'none', boxShadow: '0 8px 25px rgba(0,0,0,0.2)'
-          }}>
-            <Phone size={20} /> +91 98765 43210
-          </a>
-        </div>
-      </section>
     </div>
   );
 }
