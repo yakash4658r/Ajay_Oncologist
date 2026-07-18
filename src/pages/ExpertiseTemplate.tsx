@@ -8,7 +8,7 @@ interface ExpertiseTemplateProps {
   setCurrentPage: (page: string) => void;
 }
 
-export default function ExpertiseTemplate({ title, description, setCurrentPage }: ExpertiseTemplateProps) {
+export default function ExpertiseTemplate({ title, description, image, setCurrentPage }: ExpertiseTemplateProps) {
   return (
     <div className="page-transition">
       {/* 1. PREMIUM HERO */}
@@ -97,20 +97,7 @@ export default function ExpertiseTemplate({ title, description, setCurrentPage }
         </div>
       </section>
 
-      {/* 3. CTA SECTION */}
-      <section style={{ padding: '6rem 0', background: '#f8fafc' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center' }} data-aos="fade-up">
-          <h2 style={{ fontFamily: 'Inter', fontWeight: 800, fontSize: '2.5rem', color: '#1B2A4A', marginBottom: '1.5rem' }}>
-            Ready to Consult?
-          </h2>
-          <p style={{ color: '#475569', fontSize: '1.1rem', marginBottom: '2.5rem', lineHeight: 1.8 }}>
-            Book an appointment with Dr. Ajay Kumar for an expert opinion and a personalized treatment plan.
-          </p>
-          <button onClick={() => setCurrentPage('contact')} className="btn-primary-custom" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
-            Book An Appointment
-          </button>
-        </div>
-      </section>
+      {/* 3. CTA SECTION (Removed as we now use global CTASection) */}
     </div>
   );
 }
