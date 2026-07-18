@@ -262,14 +262,6 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
                   e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzFCMkE0QSIvPjx0ZXh0IHg9IjIwMCIgeT0iMjUwIiBmb250LWZhbWlseT0iUG9wcGlucyIgZm9udC1zaXplPSI3MiIgZmlsbD0iIzBBQkFCNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+QUs8L3RleHQ+PC9zdmc+';
                 }}
               />
-              <div className="about-experience-badge" style={{ position: 'absolute', bottom: '30px', left: '-20px' }}>
-                <div style={{ fontSize: '2rem', fontWeight: 800, fontFamily: 'Inter', color: '#0ABAB5' }}>15+</div>
-                <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.8)', fontFamily: 'Inter' }}>Years of Excellence</div>
-              </div>
-              <div className="about-achievement-badge" style={{ position: 'absolute', top: '30px', right: '-20px' }}>
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, fontFamily: 'Inter', color: '#C9A84C' }}>10+</div>
-                <div style={{ fontSize: '0.7rem', color: '#475569', fontFamily: 'Inter' }}>Research Papers</div>
-              </div>
             </div>
 
             {/* Content */}

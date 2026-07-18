@@ -45,22 +45,24 @@ export default function CTASection({ setCurrentPage }: CTASectionProps) {
         </div>
 
         {/* Image Content */}
-        <div style={{ flex: '1 1 400px', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', position: 'relative', overflow: 'hidden', paddingTop: '3rem' }}>
-          <img 
-            src="./Doctor.jpeg" 
-            alt="Dr. A. Ajay Kumar" 
-            style={{ 
-              position: 'relative', 
-              zIndex: 2, 
-              width: '80%', 
-              maxWidth: '400px',
-              height: 'auto', 
-              objectFit: 'cover',
-              objectPosition: 'top',
-              borderRadius: '40px 40px 0 0',
-              boxShadow: '0 -10px 30px rgba(0,0,0,0.15)'
-            }} 
-          />
+        <div style={{ flex: '1 1 400px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '3rem' }}>
+          <div style={{ 
+            width: '100%', maxWidth: '350px', aspectRatio: '4/5', 
+            borderRadius: '24px', overflow: 'hidden', 
+            boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+            position: 'relative'
+          }}>
+            <img 
+              src="./Doctor.jpeg" 
+              alt="Dr. A. Ajay Kumar" 
+              style={{ 
+                width: '100%', 
+                height: '100%', 
+                objectFit: 'cover',
+                objectPosition: 'top'
+              }} 
+            />
+          </div>
         </div>
         
       </div>
