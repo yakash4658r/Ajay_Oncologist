@@ -7,33 +7,9 @@ interface AboutPageProps {
 export default function AboutPage({ setCurrentPage }: AboutPageProps) {
   return (
     <div className="page-transition">
-      {/* 1. PREMIUM HERO */}
-      <div style={{
-        position: 'relative',
-        padding: '10rem 1.5rem 6rem',
-        background: `linear-gradient(135deg, rgba(15,30,56,0.9) 0%, rgba(27,42,74,0.95) 100%), url('./images/page_banner.png') center/cover no-repeat`,
-        overflow: 'hidden',
-        textAlign: 'center'
-      }}>
-        {/* Animated background elements */}
-        <div style={{ position: 'absolute', top: '-10%', left: '-5%', width: '300px', height: '300px', background: 'radial-gradient(circle, rgba(10,186,181,0.2) 0%, transparent 70%)', filter: 'blur(40px)', animation: 'float 10s ease-in-out infinite' }}></div>
-        <div style={{ position: 'absolute', bottom: '-10%', right: '-5%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%)', filter: 'blur(50px)', animation: 'float 12s ease-in-out infinite reverse' }}></div>
-        
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1000px', margin: '0 auto' }}>
-          <span style={{ display: 'inline-block', padding: '0.4rem 1.2rem', background: 'rgba(10,186,181,0.15)', border: '1px solid rgba(10,186,181,0.4)', borderRadius: '50px', color: '#0ABAB5', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-            Meet The Expert
-          </span>
-          <h1 style={{ fontFamily: 'Inter', fontWeight: 900, fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', color: 'white', lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-1px' }}>
-            Dedicated to <span style={{ background: 'linear-gradient(135deg, #0ABAB5, #7dd3fc)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Preserving Life</span> <br/>With Excellence
-          </h1>
-          <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', lineHeight: 1.8 }}>
-            Surgical Oncologist | Laparoscopic Surgeon | Compassionate Healer
-          </p>
-        </div>
-      </div>
 
       {/* 2. PREMIUM BIO SECTION */}
-      <section style={{ padding: '8rem 0', background: '#f8fafc', position: 'relative' }}>
+      <section style={{ padding: '10rem 0 8rem', background: '#f8fafc', position: 'relative' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5rem', alignItems: 'center' }}>
             
@@ -56,42 +32,6 @@ export default function AboutPage({ setCurrentPage }: AboutPageProps) {
                     }
                   }}
                 />
-                
-                {/* Floating Glassmorphic Badge 1 */}
-                <div style={{
-                  position: 'absolute', bottom: '40px', left: '-30px',
-                  background: 'rgba(255,255,255,0.85)', backdropFilter: 'blur(12px)',
-                  borderRadius: '16px', padding: '1.25rem',
-                  boxShadow: '0 15px 35px rgba(0,0,0,0.1)', border: '1px solid rgba(255,255,255,0.5)',
-                  display: 'flex', alignItems: 'center', gap: '1rem',
-                  zIndex: 2
-                }}>
-                  <div style={{ width: '45px', height: '45px', borderRadius: '12px', background: 'linear-gradient(135deg, #0ABAB5, #089a96)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
-                    <Award size={24} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily: 'Inter', fontWeight: 800, fontSize: '1.2rem', color: '#1B2A4A' }}>Rank 108</div>
-                    <div style={{ fontSize: '0.8rem', color: '#64748b', fontWeight: 600 }}>NEET-SS All India</div>
-                  </div>
-                </div>
-
-                {/* Floating Glassmorphic Badge 2 */}
-                <div style={{
-                  position: 'absolute', top: '40px', right: '-30px',
-                  background: 'rgba(27,42,74,0.9)', backdropFilter: 'blur(12px)',
-                  borderRadius: '16px', padding: '1.25rem',
-                  boxShadow: '0 15px 35px rgba(27,42,74,0.2)', border: '1px solid rgba(255,255,255,0.1)',
-                  display: 'flex', alignItems: 'center', gap: '1rem',
-                  zIndex: 2
-                }}>
-                  <div style={{ width: '45px', height: '45px', borderRadius: '12px', background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#C9A84C' }}>
-                    <GraduationCap size={24} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily: 'Inter', fontWeight: 800, fontSize: '1.2rem', color: 'white' }}>MCh</div>
-                    <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)', fontWeight: 600 }}>Surgical Oncology</div>
-                  </div>
-                </div>
               </div>
             </div>
 
