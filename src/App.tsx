@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import CTASection from './components/CTASection';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
@@ -112,6 +113,7 @@ export default function App() {
           {renderPage()}
         </main>
 
+        <CTASection setCurrentPage={setCurrentPage} />
         <Footer setCurrentPage={setCurrentPage} />
 
         {/* Click to Call (mobile) */}
