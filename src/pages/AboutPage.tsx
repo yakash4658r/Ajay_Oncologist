@@ -60,27 +60,6 @@ export default function AboutPage({ setCurrentPage }: AboutPageProps) {
               <p data-aos="fade-up" data-aos-delay="400" style={{ color: '#475569', lineHeight: 1.9, fontSize: '1.05rem', marginBottom: '2.5rem' }}>
                 His approach centers on organ preservation - combining oncological safety with function and appearance, so patients don't just survive cancer, they return to their lives with confidence.
               </p>
-
-              {/* Premium Tags */}
-              <div data-aos="fade-up" data-aos-delay="500" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
-                {[
-                  { text: 'MCh Surgical Oncology', icon: <Stethoscope size={16}/> },
-                  { text: 'NEET-SS Rank 108', icon: <Award size={16}/> },
-                  { text: 'NEET PG Rank 1281', icon: <Award size={16}/> },
-                  { text: '10+ Papers Presented', icon: <BookOpen size={16}/> }
-                ].map((tag, i) => (
-                  <div key={i} style={{ 
-                    display: 'flex', alignItems: 'center', gap: '0.5rem',
-                    background: 'white', color: '#1B2A4A', padding: '0.6rem 1.25rem', 
-                    borderRadius: '50px', fontSize: '0.9rem', fontWeight: 600, 
-                    border: '1px solid #e2e8f0', boxShadow: '0 4px 10px rgba(0,0,0,0.02)',
-                    transition: 'all 0.3s ease', cursor: 'default'
-                  }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-3px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
-                    <span style={{ color: '#0ABAB5', display: 'flex', alignItems: 'center' }}>{tag.icon}</span>
-                    {tag.text}
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

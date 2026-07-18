@@ -33,22 +33,6 @@ export default function ClinicPage({ setCurrentPage }: ClinicPageProps) {
         </div>
       </section>
 
-      {/* A New Chapter */}
-      <section style={{ padding: '6rem 0', background: 'linear-gradient(to bottom, #ffffff, #f8fafc)', position: 'relative' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 1.5rem' }}>
-          <div data-aos="zoom-in" style={{ 
-            textAlign: 'center', background: 'white', padding: '4rem 3rem', 
-            borderRadius: '24px', boxShadow: '0 25px 50px rgba(27,42,74,0.05)',
-            border: '1px solid rgba(0,0,0,0.03)', marginTop: '-8rem', position: 'relative', zIndex: 2
-          }}>
-            <h2 className="section-title" style={{ color: '#1B2A4A' }}>A New Chapter</h2>
-            <div className="section-divider center" style={{ background: '#0ABAB5' }}></div>
-            <p style={{ color: '#475569', fontSize: '1.2rem', lineHeight: '1.9', fontStyle: 'italic', maxWidth: '800px', margin: '0 auto' }}>
-              "It is not just about removing cancer. It is about early diagnosis, honest guidance, skilled surgery, and helping patients walk out with their body, their confidence, and their life intact."
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Preserve With Hope */}
       <section style={{ padding: '8rem 0', background: '#f8fafc' }}>
