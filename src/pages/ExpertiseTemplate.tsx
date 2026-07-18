@@ -4,6 +4,7 @@ import { ChevronRight } from 'lucide-react';
 interface ExpertiseTemplateProps {
   title: string;
   description: string;
+  image?: string;
   setCurrentPage: (page: string) => void;
 }
 
@@ -15,30 +16,38 @@ export default function ExpertiseTemplate({ title, description, setCurrentPage }
         position: 'relative',
         padding: '12rem 1.5rem 8rem',
         background: `linear-gradient(135deg, rgba(15,30,56,0.9) 0%, rgba(27,42,74,0.95) 100%), url('./images/page_banner.png') center/cover no-repeat`,
-        overflow: 'hidden',
-        textAlign: 'center'
+        overflow: 'hidden'
       }}>
         {/* Animated background elements */}
         <div style={{ position: 'absolute', top: '-20%', left: '-10%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(10,186,181,0.15) 0%, transparent 70%)', filter: 'blur(50px)', animation: 'float 10s ease-in-out infinite' }}></div>
         <div style={{ position: 'absolute', bottom: '-20%', right: '-10%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 70%)', filter: 'blur(60px)', animation: 'float 12s ease-in-out infinite reverse' }}></div>
         
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1000px', margin: '0 auto' }} data-aos="fade-up">
-          <span style={{ display: 'inline-block', padding: '0.4rem 1.2rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '50px', color: '#0ABAB5', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-            Area of Expertise
-          </span>
-          <h1 style={{ fontFamily: 'Inter', fontWeight: 900, fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: 'white', lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-1px' }}>
-            {title}
-          </h1>
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1280px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '4rem' }}>
           
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', marginTop: '2rem' }}>
-            <button onClick={() => setCurrentPage('home')} style={{ background: 'none', border: 'none', color: 'rgba(255,255,255,0.6)', cursor: 'pointer', fontSize: '0.9rem', display: 'flex', alignItems: 'center' }}>
-              Home
-            </button>
-            <ChevronRight size={14} color="rgba(255,255,255,0.4)" />
-            <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.9rem' }}>Expertise</span>
-            <ChevronRight size={14} color="rgba(255,255,255,0.4)" />
-            <span style={{ color: '#0ABAB5', fontSize: '0.9rem', fontWeight: 600 }}>{title}</span>
+          <div style={{ flex: '1 1 500px' }} data-aos="fade-right">
+            <h1 style={{ fontFamily: 'Inter', fontWeight: 900, fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: 'white', lineHeight: 1.1, marginBottom: '1.5rem', letterSpacing: '-1px' }}>
+              {title}
+            </h1>
+            <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.15rem', lineHeight: '1.8', maxWidth: '600px' }}>
+              Advanced surgical care and specialized treatments for {title.toLowerCase()}.
+            </p>
           </div>
+
+          {image && (
+            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }} data-aos="fade-left">
+              <div style={{ 
+                width: '100%', maxWidth: '450px', aspectRatio: '16/10', 
+                borderRadius: '24px', overflow: 'hidden', 
+                boxShadow: '0 25px 50px rgba(0,0,0,0.3)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                position: 'relative'
+              }}>
+                <img src={image} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,30,56,0.4), transparent)' }}></div>
+              </div>
+            </div>
+          )}
+          
         </div>
       </div>
 

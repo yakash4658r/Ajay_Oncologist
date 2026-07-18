@@ -6,23 +6,23 @@ interface PageProps {
 }
 
 export function BreastCancerSurgeryPage(props: PageProps) {
-  return <ExpertiseTemplate title="Breast Cancer Surgery" description="Breast conservation surgery, oncoplasty, and mastectomy — treating the disease while preserving form and confidence." setCurrentPage={props.setCurrentPage} />;
+  return <ExpertiseTemplate title="Breast Cancer Surgery" description="Breast conservation surgery, oncoplasty, and mastectomy — treating the disease while preserving form and confidence." image="./images/breast_cancer.png" setCurrentPage={props.setCurrentPage} />;
 }
 
 export function ThyroidCancerSurgeryPage(props: PageProps) {
-  return <ExpertiseTemplate title="Thyroid Cancer Surgery" description="Surgical management of both cancerous and benign thyroid conditions." setCurrentPage={props.setCurrentPage} />;
+  return <ExpertiseTemplate title="Thyroid Cancer Surgery" description="Surgical management of both cancerous and benign thyroid conditions." image="./images/thyroid_cancer.png" setCurrentPage={props.setCurrentPage} />;
 }
 
 export function GICancerSurgeryPage(props: PageProps) {
-  return <ExpertiseTemplate title="GI Cancer Surgery" description="Comprehensive surgical treatment for stomach and gastrointestinal cancers, from diagnosis to definitive surgery." setCurrentPage={props.setCurrentPage} />;
+  return <ExpertiseTemplate title="GI Cancer Surgery" description="Comprehensive surgical treatment for stomach and gastrointestinal cancers, from diagnosis to definitive surgery." image="./images/gi_cancer.png" setCurrentPage={props.setCurrentPage} />;
 }
 
 export function GynecologicalCancerSurgeryPage(props: PageProps) {
-  return <ExpertiseTemplate title="Gynecological Cancer Surgery" description="Surgical oncology care for uterine, endometrial, and ovarian cancers." setCurrentPage={props.setCurrentPage} />;
+  return <ExpertiseTemplate title="Gynecological Cancer Surgery" description="Surgical oncology care for uterine, endometrial, and ovarian cancers." image="./images/gynecological_cancer.png" setCurrentPage={props.setCurrentPage} />;
 }
 
 export function SoftTissueSarcomaPage(props: PageProps) {
-  return <ExpertiseTemplate title="Soft Tissue Sarcoma" description="Specialized limb-preservation surgery for soft tissue and bone sarcomas." setCurrentPage={props.setCurrentPage} />;
+  return <ExpertiseTemplate title="Soft Tissue Sarcoma" description="Specialized limb-preservation surgery for soft tissue and bone sarcomas." image="./images/soft_tissue.png" setCurrentPage={props.setCurrentPage} />;
 }
 
 export function HeadNeckCancerPage(props: PageProps) {
