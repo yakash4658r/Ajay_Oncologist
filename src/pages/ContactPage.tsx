@@ -41,8 +41,8 @@ export default function ContactPage({ setCurrentPage }: ContactPageProps) {
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1.5rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
             {[
-              { icon: <Phone size={24} />, label: 'Call Us', value: '+91 98765 43210', sub: 'Mon–Sat, 9AM–6PM', href: 'tel:+919876543210', color: '#0ABAB5' },
-              { icon: <span style={{ fontSize: '1.5rem' }}></span>, label: 'WhatsApp', value: '+91 98765 43210', sub: 'Quick Response', href: 'https://wa.me/919876543210', color: '#25D366' },
+              { icon: <Phone size={24} />, label: 'Call Us', value: '+91 95662 43099', sub: 'Mon–Sat, 9AM–6PM', href: 'tel:+919566243099', color: '#0ABAB5' },
+              { icon: <span style={{ fontSize: '1.5rem' }}></span>, label: 'WhatsApp', value: '+91 95662 43099', sub: 'Quick Response', href: 'https://wa.me/919566243099', color: '#25D366' },
               { icon: <Mail size={24} />, label: 'Email Us', value: 'drajayoncology@gmail.com', sub: 'Within 24 hours', href: 'mailto:drajayoncology@gmail.com', color: '#f59e0b' },
               { icon: <MapPin size={24} />, label: 'Visit Us', value: 'Thirumullaivoyal, Chennai', sub: 'Click for directions', href: 'https://maps.google.com/?q=No-+69,+Sri+Annai+complex,+Madras+Thiruvallur+High+Rd,+Venugopal+Nagar,+Thirumullaivoyal,+Chennai,+Avadi,+Tamil+Nadu+600062', color: '#ef4444' },
             ].map((c, i) => (
@@ -102,7 +102,7 @@ export default function ContactPage({ setCurrentPage }: ContactPageProps) {
                   {[
                     { field: 'name', label: 'Full Name *', type: 'text', placeholder: 'Your Full Name', required: true },
                     { field: 'email', label: 'Email Address', type: 'email', placeholder: 'your@email.com', required: false },
-                    { field: 'phone', label: 'Phone Number *', type: 'tel', placeholder: '+91 98765 43210', required: true },
+                    { field: 'phone', label: 'Phone Number *', type: 'tel', placeholder: '+91 95662 43099', required: true },
                     { field: 'subject', label: 'Subject', type: 'text', placeholder: 'How can we help?', required: false },
                   ].map(f => (
                     <div key={f.field}>
@@ -219,7 +219,7 @@ export default function ContactPage({ setCurrentPage }: ContactPageProps) {
                     style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#0ABAB5', fontFamily: 'Inter', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
                      Get Directions
                   </a>
-                  <a href="tel:+919876543210"
+                  <a href="tel:+919566243099"
                     style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#C9A84C', fontFamily: 'Inter', fontWeight: 600, fontSize: '0.85rem', textDecoration: 'none' }}>
                      Call Now
                   </a>

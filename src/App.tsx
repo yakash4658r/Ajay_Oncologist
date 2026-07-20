@@ -118,7 +118,7 @@ export default function App() {
 
         {/* Click to Call (mobile) */}
         <a
-          href="tel:+919876543210"
+          href="tel:+919566243099"
           className="click-to-call"
           aria-label="Call Dr. Ajay Kumar"
           title="Call Now"
@@ -130,7 +130,7 @@ export default function App() {
 
         {/* WhatsApp Float */}
         <a
-          href="https://wa.me/919876543210?text=Hello%20Dr.%20Ajay%20Kumar%2C%20I%20would%20like%20to%20book%20an%20appointment."
+          href="https://wa.me/919566243099?text=Hello%20Dr.%20Ajay%20Kumar%2C%20I%20would%20like%20to%20book%20an%20appointment."
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-float"

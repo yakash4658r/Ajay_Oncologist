@@ -108,7 +108,7 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
               </div>
             ))}
             <a
-              href="tel:+919876543210"
+              href="tel:+919566243099"
               style={{
                 display: 'flex', alignItems: 'center', gap: '0.4rem',
                 background: 'linear-gradient(135deg, #0ABAB5, #089a96)',
@@ -196,7 +196,7 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
         ))}
         <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
           <a
-            href="tel:+919876543210"
+            href="tel:+919566243099"
             style={{
               display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
               background: 'linear-gradient(135deg, #0ABAB5, #089a96)',
@@ -209,7 +209,7 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
             <Phone size={16} /> Call Now
           </a>
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/919566243099"
             target="_blank"
             rel="noopener noreferrer"
             style={{

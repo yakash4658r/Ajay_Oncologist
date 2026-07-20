@@ -136,8 +136,8 @@ export default function Footer({ setCurrentPage }: FooterProps) {
                 },
                 {
                   icon: <Phone size={16} />,
-                  text: '+91 98765 43210',
-                  href: 'tel:+919876543210'
+                  text: '+91 95662 43099',
+                  href: 'tel:+919566243099'
                 },
                 {
                   icon: <Mail size={16} />,
