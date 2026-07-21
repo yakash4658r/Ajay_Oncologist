@@ -74,8 +74,8 @@ export default function Footer({ setCurrentPage }: FooterProps) {
             </p>
             <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
               {[
-                { icon: <FacebookIcon />, href: '#', label: 'Facebook' },
-                { icon: <InstagramIcon />, href: '#', label: 'Instagram' },
+                { icon: <FacebookIcon />, href: 'https://www.facebook.com/share/1BZBNL71kQ/?mibextid=wwXIfr', label: 'Facebook' },
+                { icon: <InstagramIcon />, href: 'https://www.instagram.com/ar.surgical.and.cancer.clinic', label: 'Instagram' },
                 { icon: <YoutubeIcon />, href: '#', label: 'YouTube' },
               ].map(s => (
                 <a key={s.label} href={s.href} className="social-icon" aria-label={s.label} target="_blank" rel="noopener noreferrer">

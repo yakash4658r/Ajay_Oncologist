@@ -130,7 +130,7 @@ export default function App() {
 
         {/* WhatsApp Float */}
         <a
-          href="https://wa.me/919566243099?text=Hello%20Dr.%20Ajay%20Kumar%2C%20I%20would%20like%20to%20book%20an%20appointment."
+          href="https://wa.me/918610076577?text=Hello%20Dr.%20Ajay%20Kumar%2C%20I%20would%20like%20to%20book%20an%20appointment."
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-float"

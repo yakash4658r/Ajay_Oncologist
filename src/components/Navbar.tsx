@@ -209,7 +209,7 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
             <Phone size={16} /> Call Now
           </a>
           <a
-            href="https://wa.me/919566243099"
+            href="https://wa.me/918610076577"
             target="_blank"
             rel="noopener noreferrer"
             style={{

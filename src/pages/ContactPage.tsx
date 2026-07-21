@@ -42,7 +42,7 @@ export default function ContactPage({ setCurrentPage }: ContactPageProps) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
             {[
               { icon: <Phone size={24} />, label: 'Call Us', value: '+91 95662 43099', sub: 'Mon–Sat, 9AM–6PM', href: 'tel:+919566243099', color: '#0ABAB5' },
-              { icon: <span style={{ fontSize: '1.5rem' }}></span>, label: 'WhatsApp', value: '+91 95662 43099', sub: 'Quick Response', href: 'https://wa.me/919566243099', color: '#25D366' },
+              { icon: <span style={{ fontSize: '1.5rem' }}></span>, label: 'WhatsApp', value: '+91 86100 76577', sub: 'Quick Response', href: 'https://wa.me/918610076577', color: '#25D366' },
               { icon: <Mail size={24} />, label: 'Email Us', value: 'drajayoncology@gmail.com', sub: 'Within 24 hours', href: 'mailto:drajayoncology@gmail.com', color: '#f59e0b' },
               { icon: <MapPin size={24} />, label: 'Visit Us', value: 'Thirumullaivoyal, Chennai', sub: 'Click for directions', href: 'https://maps.google.com/?q=No-+69,+Sri+Annai+complex,+Madras+Thiruvallur+High+Rd,+Venugopal+Nagar,+Thirumullaivoyal,+Chennai,+Avadi,+Tamil+Nadu+600062', color: '#ef4444' },
             ].map((c, i) => (
