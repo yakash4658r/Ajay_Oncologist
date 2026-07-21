@@ -50,7 +50,7 @@ const faqs = [
   { q: 'What is Surgical Oncology?', a: 'Surgical Oncology is a specialized branch of surgery that focuses on the surgical management of cancer. A surgical oncologist performs biopsies, tumor removal, and complex cancer resections, often working alongside medical and radiation oncologists.' },
   { q: 'What cancers does Dr. Ajay Kumar treat?', a: 'Dr. Ajay Kumar treats a wide range of cancers including breast, thyroid, gastrointestinal (stomach, colon, rectal), gynecological (ovarian, uterine, cervical), soft tissue sarcomas, head & neck cancers, and more.' },
   { q: 'What is laparoscopic cancer surgery?', a: 'Laparoscopic (minimally invasive) cancer surgery uses small incisions and a camera to perform complex cancer operations. Benefits include less pain, shorter hospital stay, faster recovery, minimal blood loss, and better cosmetic results.' },
-  { q: 'How do I book an appointment?', a: 'You can book an appointment by calling +91 95662 43099, sending a WhatsApp message, filling out the online form on our website, or visiting our clinic in Chennai during working hours (Mon–Sat, 9AM–6PM).' },
+  { q: 'How do I book an appointment?', a: 'You can book an appointment by calling +91 86100 76577, sending a WhatsApp message, filling out the online form on our website, or visiting our clinic in Chennai during working hours (Mon–Sat, 5PM–9PM).' },
   { q: 'Does Dr. Ajay Kumar perform second opinion consultations?', a: 'Yes, Dr. Ajay Kumar provides second opinion consultations for cancer diagnoses and treatment plans. It is always advisable to seek expert opinion before proceeding with cancer treatment.' },
 ];
 
@@ -122,7 +122,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
                   <button onClick={() => setCurrentPage('contact')} className="btn-primary-custom" style={{ padding: '0.8rem 2rem' }}>
                     <Calendar size={18} /> Book Appointment
                   </button>
-                  <a href="tel:+919566243099" className="btn-outline-custom" style={{ padding: '0.8rem 2rem' }}>
+                  <a href="tel:+918610076577" className="btn-outline-custom" style={{ padding: '0.8rem 2rem' }}>
                     <Phone size={18} /> Call Now
                   </a>
                 </div>
@@ -148,7 +148,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
                   <button onClick={() => setCurrentPage('contact')} className="btn-primary-custom" style={{ padding: '0.8rem 2rem' }}>
                     <Calendar size={18} /> Book Appointment
                   </button>
-                  <a href="tel:+919566243099" className="btn-outline-custom" style={{ padding: '0.8rem 2rem' }}>
+                  <a href="tel:+918610076577" className="btn-outline-custom" style={{ padding: '0.8rem 2rem' }}>
                     <Phone size={18} /> Call Now
                   </a>
                 </div>
@@ -174,7 +174,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
                   <button onClick={() => setCurrentPage('contact')} className="btn-primary-custom" style={{ padding: '0.8rem 2rem' }}>
                     <Calendar size={18} /> Book Appointment
                   </button>
-                  <a href="tel:+919566243099" className="btn-outline-custom" style={{ padding: '0.8rem 2rem' }}>
+                  <a href="tel:+918610076577" className="btn-outline-custom" style={{ padding: '0.8rem 2rem' }}>
                     <Phone size={18} /> Call Now
                   </a>
                 </div>
@@ -450,7 +450,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
                     </div>
                     <div>
                       <label style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.8rem', fontFamily: 'Inter', fontWeight: 600, display: 'block', marginBottom: '0.4rem' }}>Phone Number *</label>
-                      <input required type="tel" placeholder="+91 95662 43099" value={formData.phone}
+                      <input required type="tel" placeholder="+91 86100 76577" value={formData.phone}
                         onChange={e => setFormData(p => ({ ...p, phone: e.target.value }))}
                         className="form-control-custom" />
                     </div>
@@ -502,7 +502,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
                 </h3>
                 {[
                   { icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>, label: 'WhatsApp', value: '+91 86100 76577', href: 'https://wa.me/918610076577' },
-                  { icon: <Mail size={18} />, label: 'Email', value: 'drajayoncology@gmail.com', href: 'mailto:drajayoncology@gmail.com' },
+                  { icon: <Mail size={18} />, label: 'Email', value: 'ajaymedico5210@gmail.com', href: 'mailto:ajaymedico5210@gmail.com' },
                   { icon: <MapPin size={18} />, label: 'Clinic Address', value: 'No- 69, Sri Annai complex, Madras Thiruvallur High Rd, Venugopal Nagar, Thirumullaivoyal, Chennai, Avadi, Tamil Nadu 600062' },
                 ].map((item, i) => (
                   <div key={i} className="contact-info-item">

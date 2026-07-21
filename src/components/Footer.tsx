@@ -136,13 +136,13 @@ export default function Footer({ setCurrentPage }: FooterProps) {
                 },
                 {
                   icon: <Phone size={16} />,
-                  text: '+91 95662 43099',
-                  href: 'tel:+919566243099'
+                  text: '+91 86100 76577',
+                  href: 'tel:+918610076577'
                 },
                 {
                   icon: <Mail size={16} />,
-                  text: 'drajayoncology@gmail.com',
-                  href: 'mailto:drajayoncology@gmail.com'
+                  text: 'ajaymedico5210@gmail.com',
+                  href: 'mailto:ajaymedico5210@gmail.com'
                 },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', marginBottom: '1rem' }}>

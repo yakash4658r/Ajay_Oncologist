@@ -195,7 +195,7 @@ export default function ConditionsPage({ setCurrentPage }: ConditionsPageProps) 
               >
                  Book Appointment
               </button>
-              <a href="tel:+919566243099" className="btn-outline-custom">
+              <a href="tel:+918610076577" className="btn-outline-custom">
                  Call Now
               </a>
             </div>

@@ -118,7 +118,7 @@ export default function App() {
 
         {/* Click to Call (mobile) */}
         <a
-          href="tel:+919566243099"
+          href="tel:+918610076577"
           className="click-to-call"
           aria-label="Call Dr. Ajay Kumar"
           title="Call Now"
